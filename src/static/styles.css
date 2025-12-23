@@ -110,6 +110,27 @@ section h3 {
   color: #333;
 }
 
+/* Ensure list bullets are hidden (defensive) */
+.activity-card .participants-list,
+.activity-card .participants-list li {
+  list-style-type: none;
+}
+
+/* Remove participant (delete) button */
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.remove-participant:hover {
+  background-color: rgba(198,40,40,0.08);
+}
+
 .activity-card .participant-avatar {
   width: 32px;
   height: 32px;
